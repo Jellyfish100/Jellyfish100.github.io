@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title>Jeanette's Cool Website</title> 
+      <style>
+          body {
+        background: rgb(250, 170, 194);
+        color: rgb(129, 116, 252);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(218, 137, 250);
+        margin: 0 auto;
+        display: flex;
+        padding: 10px; 
+        border-style: dotted; 
+        border-bottom-color: purple; 
+        border-left-color: purple; 
+        border-right-color: purple; 
+        border-top-color: purple;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: rgb(159, 236, 250);
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none; 
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: purple underline;
+        color: rgb(250, 57, 153);
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(240, 241, 142);
+        display: flex; 
+    }
+    .sidebar {
+        margin-right: 0px;
+        padding: 10px; 
+    }
+    .sidebar-img {
+        width: 200px;
+        border-radius: 50px / 15px; 
+        border-style: dotted; 
+        border-inline-color: goldenrod; 
+        border-bottom-color: goldenrod; 
+        border-top-color:goldenrod;
+    }
+    .content {
+        flex: 1;
+        padding: 20px; 
+    }
+    #interests {
+        border: 12px goldenrod ridge;
+        padding: 10px; 
+    }
+    h2, h3 {
+        margin: 20px; 
+    }
+    </style>
+    </head>
+    
+    <body>
+       <!-- All content goes here -->
+       <div id="all-contents">
+      <div> 
+          <nav>
+                <h1>Jeanette's Cool Website</h1>
+          </nav> 
+                <ul>
+                  <div id="nav-ul">
+                    <li> 
+                      <div class="nav-li">
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                      <div class="nav-li">
+                        <a href="portfolio"> portfolio </a>
+                    </li>
+                </ul>
+                <main>
+            <!-- Sidebar section -->
+            <div> 
+              <div class="sidebar">
+                <img class="sidebar-img" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/183534306_319209609726093_3865057288454039134_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=iOEGNzIo4lsAX-OtdNp&_nc_ht=scontent-atl3-1.xx&oh=2b9f0f377cc1453389e0e649690b8648&oe=61785153"> 
+                <img class="sidebar-img" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/191739956_334811404832580_593020175478641493_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=fh9VDK-WErUAX_vZbkW&_nc_ht=scontent-atl3-1.xx&oh=33bdcdde72d6778d91e2ec72fee408f2&oe=6178755F"> 
+                <img class="sidebar-img" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/194153147_337355501244837_4991772382926562499_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=GrbActeJzXQAX-wl3nk&_nc_oc=AQmZhvyDYw6-cUjNX39F_ij5WtvfhQ70tnoaKAwhnOz6PHtQHddvbZ8_xDkxBxm0PbkVH6PglEHqyTbM4tNGNrrp&_nc_ht=scontent-atl3-1.xx&oh=70780b6e6ded19925a35445e342e1c48&oe=6177DEF0">
+            </div> 
+            <!--Content section -->
+            <div>
+              <div class="content">
+              <h2>Jeanette Ginsberg</h2>
+              <p>Student at Sterlington High School</p>
+            </div> 
+            <!-- Interests section -->
+            <div>
+              <div id="interests">
+              <h3>Jeanette's Interests</h3>
+              <ul>
+                  <li>Drawing</li>
+                  <li>Photography</li>
+                  <li>Video Games</li>
+              </ul>
+            </div>
+          </main>
+      </div>
+    </body>
+</html>
