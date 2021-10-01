@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Jeanette's portfolio</title>
+        <style type="text/css">
+         body {
+        background: rgb(250, 170, 194);
+        color: rgb(129, 116, 252);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+    
+    /* navigation menu */
+    nav {
+        background: rgb(218, 137, 250);
+        margin: 0 auto;
+        display: flex;
+        padding: 10px; 
+        border-style: dotted; 
+        border-bottom-color: purple; 
+        border-left-color: purple; 
+        border-right-color: purple; 
+        border-top-color: purple;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: rgb(159, 236, 250);
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none; 
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: purple underline;
+        color: rgb(250, 57, 153);
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(240, 241, 142);
+        display: flex; 
+    }
+    .sidebar {
+        margin-right: 0px;
+        padding: 10px; 
+    }
+    .sidebar-img {
+        width: 200px;
+        border-radius: 50px / 15px; 
+        border-style: dotted; 
+        border-inline-color: goldenrod; 
+        border-bottom-color: goldenrod; 
+        border-top-color:goldenrod;
+    }
+    .content {
+        flex: 1;
+        padding: 20px; 
+            }
+             /* portfolio styles */
+             .content h1 {
+                color: black;
+            }
+            
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover {
+                background: #eee;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
+            }
+        </style>
+
+        </style>
+    </head>
+
+    <body>
+      <div id="all-contents">
+        <nav>
+            <h1>Jeanette's portfolio</h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                  <a class="nav-a" href="index.html">Home</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="content">
+                <h1>Portfolio</h1>
+                <ul id="portfolio">
+                    <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
+                    <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
+                    <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
+                </ul>
+            </div>
+        </main>
+    </div>
+      
+      </div>
+    </body>
+</html>
