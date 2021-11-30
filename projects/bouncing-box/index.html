@@ -14,12 +14,12 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 300px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
 		}
-	</style>
+	</style> 
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
 </head>
@@ -49,19 +49,19 @@
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
-			}
+			} 
 
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
 				box.text(newText);
-			}
+			} 
 
 			//////////////////////////////////////////////////////////////////
 			/////////////////// YOUR CODE BELOW HERE /////////////////////////
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var positionX = 0; 
 
 			
 			/* 
@@ -70,9 +70,12 @@
 			turn it around! 
 			*/
 			function update() {
-				
+				positionX = positionX + 10; 
+			    moveBoxTo(positionX);  
 
 			};
+			
+		
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
@@ -80,7 +83,9 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+				positionX = 0; 
+				changeBoxText(1);
+				changeBoxText(points); 
 
 
 			};
